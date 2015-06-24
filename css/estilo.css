@@ -1,0 +1,725 @@
+.acceso-contacto{
+	width: 100%;
+	margin: 0;
+	padding: 40px 0;
+	background-color: #006688;
+}
+
+.acceso-contacto .info h2{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	color: white;
+}
+
+.acceso-contacto .ico-num{
+	width: 100%;
+	padding: 10px 0;
+}
+
+.acceso-contacto .ico-num figure{
+	margin: 0;
+	padding: 0;
+}
+
+.acceso-contacto .ico-num figure img{
+	border: 3px solid white;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.acceso-contacto .ico-num h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	color: white;
+	font-size: 45px;
+	margin:0;
+	padding: 5px 0;
+}
+
+.acceso-contacto .ico-num .detalle{
+	margin: auto;
+	width: 300px;
+}
+
+.acceso-contacto .info p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	color: white;
+}
+
+.slide{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.banner-slide .item .d_banner{
+	margin-left: 20%;
+	max-width: 90%;
+	padding-top: 5%;
+	text-align: left;
+	position: absolute;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+}
+
+.banner-slide .item img{
+	width: 100%;
+}
+
+.banner-slide .item .d_banner h1{
+	font-size: 25px;
+	padding-top: 15%;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	margin: auto;
+	color:white;
+}
+
+.banner-slide .item .d_banner h3{
+	font-size: 10px;
+	padding: 5px;
+	background: #9f2a2a;
+	margin: auto;
+	color:white;
+	margin-bottom: 5px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.banner-slide .item .d_banner h4{
+	font-size: 10px;
+	padding: 5px;
+	background: #9f2a2a;
+	margin: auto;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	color:white;
+}
+
+.banner-slide .item .d_banner p{
+	font-size: 10px;
+	margin: auto;
+	color:white;
+}
+
+/*inicio estilo del boton directo al acceso de contacto*/
+
+.boton{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+/* Common button styles */
+.button {
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+	margin: auto;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	padding: 1em 2em;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+	outline: none;
+}
+.button > span {
+	vertical-align: middle;
+}
+
+/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
+.bg-1 .button {
+	color: #37474f;
+	border-color: white;
+}
+
+/* Borders */
+.button--border-thin {
+	border: 1px solid;
+}
+.button--border-medium {
+	border: 1px solid;
+}
+.button--border-thick {
+	border: 1px solid;
+}
+
+.boton .button--tamaya {
+	overflow: hidden;
+	color: black;
+	min-width: 180px;
+}
+.boton .button--tamaya.button--inverted {
+	color: #37474f;
+	border-color: #37474f;
+}
+.boton .button--tamaya::before,
+.boton .button--tamaya::after {
+	content: attr(data-text);
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	left: 0;
+	background: #004e68;
+	color: #fff;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.boton .button--tamaya.button--inverted::before,
+.boton .button--tamaya.button--inverted::after {
+	background: #fff;
+	color: #37474f;
+}
+.boton .button--tamaya::before {
+	top: 0;
+	padding-top: 1em;
+}
+.boton .button--tamaya::after {
+	bottom: 0;
+	line-height: 0;
+}
+.boton .button--tamaya > span {
+	display: block;
+	-webkit-transform: scale3d(0.2, 0.2, 1);
+	transform: scale3d(0.2, 0.2, 1);
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.boton .button--tamaya:hover::before {
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+}
+.boton .button--tamaya:hover::after {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+.boton .button--tamaya:hover > span {
+	opacity: 1;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+
+/*final estilo del boton directo al acceso de contacto*/
+
+.catalogo{
+	background-color: #f6f5f5;
+	margin:0 auto;
+	padding: 0;
+	padding: 40px 0;
+}
+
+.catalogo .banner{
+	width: 90%;
+	max-width: 1200px;
+	margin:auto;
+	}
+
+.catalogo .banner figure{
+	width: 100%;
+	max-width: 1200px;
+	margin-top: 15px;
+	z-index: 0;
+	}
+
+.catalogo .banner img{
+	width: 100%;
+	max-width: 1200px;
+	}
+
+.catalogo .banner .info_banner{
+	text-align: right;
+	color: white;
+	width: 90%;
+	max-width: 1200px;
+	margin:auto;
+	z-index: 1;
+	position: absolute;
+	padding: 4% 3% 0 0;
+
+	}
+
+.catalogo .banner .info_banner h2{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	color: white;
+	}
+
+.catalogo .banner .info_banner p{
+	font-family:'Open Sans', sans-serif;
+	font-weight: 100;
+	}
+
+.catalogo .banner .btn_not a{
+	color: white;
+	float: right;
+	text-align: center;
+	padding: 10px 20px;
+	border: 1px solid white;
+}
+
+.catalogo .banner .btn_not a:hover{
+	color: black;
+	text-decoration: none;
+	background: white;
+}
+
+footer .pie{
+	background-color: #2c2c2c;
+	color: white;
+	padding: 30px;
+}
+
+footer .pie h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	color: #006688;
+}
+
+footer .pie p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	color: white;
+}
+
+footer .pie .con_pie{
+	padding-top: 15px;
+}
+
+footer .pie .con_pie figure{
+	padding-bottom: 15px;
+}
+
+footer .pie2 p{
+	color: #006688;
+	padding: 8px 0;
+}
+
+footer .pie2 .cliente p{
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+footer .pie2 .emagenic p{
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.logo{
+	width: 100px;
+	position: absolute;
+	z-index: 1;
+	margin-left: 5%;
+}
+
+.logo img{
+	width: 100px;
+	max-width: 90%;
+}
+
+.navegador{
+	text-align: center;
+	margin: 0;
+	border-radius: 0;
+}
+
+.navegador .nave2 figure{
+	width:100px;
+}
+
+.navegador .nave2 figure img{
+	width: 100%;
+}
+
+.navegador .nave3 .nave4{
+	padding: 2% 0;
+}
+
+.productos .titulo{
+	padding-bottom: 40px;
+}
+
+.productos .titulo h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.productos .titulo p{
+	width: 80%;
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.productos .promocion{
+	margin: 0;
+	padding: 0;
+	margin-bottom:55px; 
+}
+
+.productos .promocion .prod{
+	margin: 0;
+	padding: 0;
+	margin-bottom:35px; 
+}
+
+.productos .promocion .prod .extra{
+	border: 1px solid #ccc;
+	margin: 0 10px;
+}
+
+.productos .promocion .prod figure{
+	margin: 10px;
+}
+
+.productos .promocion .prod figure img{
+	width: 100%;
+}
+
+.productos .promocion .prod .info{
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+}
+
+.productos .promocion .prod .info h5{
+	font-weight: 100;
+	font-style: italic;
+	font-size: 16px;
+	margin: 0 10px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.productos .promocion .prod .info h4{
+	margin: 0;
+	padding: 0;
+	font-weight: 100;
+	font-style: italic;
+	font-size: 16px;
+	margin: 0 10px;
+	padding: 10px 0;
+}
+
+.productos .promocion .prod .info p{
+	font-weight: 100;
+	background-color: black;
+	margin: 0;
+	padding: 10px;
+	color: white;
+}
+
+.productos .promocion .prod .info h3{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	font-style: italic;
+	background-color: #9f2a2a;
+	margin: 0;
+	padding: 10px;
+	color: white;
+}
+
+/*final estilo de index*/
+
+/*inicio estilo de contacto*/
+
+.banner-contacto{
+	padding: 0;
+	margin: 0 auto;
+}
+
+.banner-contacto .ima-ba{
+	margin: 0 auto;
+	padding: 0;
+}
+
+.banner-contacto .ima-ba figure{
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.banner-contacto .ima-ba img{
+	margin: 0 auto;
+	width: 100%;
+}
+
+.cont_simp{
+	background: #242628;
+	padding: 70px 0;
+}
+
+.cont_simp .contactanos{
+	margin: 0;
+	padding: 0;
+}
+
+.cont_simp .contactanos .titulo{
+	margin: 0;
+	padding: 0;
+}
+
+.cont_simp .contactanos .titulo h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	color: #ccc;
+}
+
+.cont_simp .contactanos .titulo p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	color: #ccc;
+}
+
+.cont_simp input{
+	background: #1f2123;
+	border: 1px solid #3c3c3c;
+	padding: 14px;
+	margin: 10px 0; 
+}
+
+.cont_simp textarea{
+	background: #1f2123;
+	border: 1px solid #3c3c3c;
+	padding: 14px;
+	margin: 10px 0; 
+	padding-bottom: 80px; 
+}
+
+.cont_simp .glob-en{
+	width: 350px;
+	margin: auto;
+}
+
+.cont_simp .enviar{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	color: white;
+	background: #9f2a2a;
+	border: 1px solid red;
+	padding: 14px;
+	padding-bottom: 10px; 
+}
+
+/*final estilo de contacto*/
+
+/*inicio estilo de nosotros*/
+
+article{
+	background: #f6f5f5;
+	margin: 0 auto;
+	padding: 0;
+}
+
+article .empresa{
+	background: white;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+article .empresa h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}
+
+article .empresa h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: red;
+}
+
+article .empresa p{
+	margin: auto;
+	width: 80%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+article .eltodo{
+	padding: 70px 0;
+}
+
+article .container{
+	width: 1200px;
+	max-width: 90%;
+	background: white;
+	padding: 0;
+}
+
+article .imagen{
+	margin: 0;
+	padding: 0;
+}
+
+article .imagen .im-int img{
+	width: 100%;
+}
+
+article .titulo .im-inf h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+article .titulo .im-inf h3{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	color: red;
+	font-size: 16px;
+}
+
+article .titulo .im-inf h4{
+	padding-top: 15%;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	color: #2c2c2c;
+}
+
+article .titulo .im-inf p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	color: #2c2c2c;
+}
+
+/*final estilo de nosotros*/
+
+@media screen and (max-width: 768px) {
+
+.catalogo .banner .info_banner{
+	text-align: center;
+	color: white;
+	width: 90%;
+	max-width: 1200px;
+	margin:auto;
+	z-index: 1;
+	position: absolute;
+	padding: 5% 3% 0 0;
+	float: center;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+.logo{
+	width: 150px;
+	position: absolute;
+	z-index: 1;
+	margin-left: 10%;
+}
+
+.logo img{
+	width: 150px;
+	max-width: 90%;
+}
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+.banner-slide .item .d_banner h1{
+	padding-top: 5%;
+	font-size: 35px;
+	margin-bottom: 5px;
+}
+
+.banner-slide .item .d_banner h3{
+	font-size: 15px;
+}
+
+.banner-slide .item .d_banner h4{
+	font-size: 15px;
+}
+
+.banner-slide .item .d_banner p{
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+footer .pie2 .cliente p{
+	float: left;
+}
+
+footer .pie2 .emagenic p{
+	float: right;
+}
+
+.logo{
+	width: 150px;
+	position: absolute;
+	z-index: 1;
+	margin-left: 10%;
+}
+
+.logo img{
+	width: 150px;
+	max-width: 90%;
+}
+
+}
+
+@media screen and (min-width: 1400px) {
+
+.banner-slide .item .d_banner h1{
+	font-size: 45px;
+}
+
+.banner-slide .item .d_banner h3{
+	font-size: 20px;
+}
+
+.banner-slide .item .d_banner h4{
+	font-size: 20px;
+}
+
+.banner-slide .item .d_banner p{
+	font-size: 20px;
+}
+
+.logo{
+	width: 150px;
+	position: absolute;
+	z-index: 1;
+	margin-left: 20%;
+}
+
+.logo img{
+	width: 150px;
+	max-width: 90%;
+}
+
+}
